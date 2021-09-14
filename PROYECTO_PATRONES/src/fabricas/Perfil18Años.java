@@ -24,25 +24,26 @@ import productos.tarjetaDebito.TarjetaDebito18Años;
  */
 public class Perfil18Años implements IBanco{
     
-    public CuentaAhorro crearCuentaAhorros(){    
-        return new CuentaAhorro18Años();
+    public CuentaAhorro crearCuentaAhorros(String id){    
+        return new CuentaAhorro18Años(id);
     }
     
-    public CuentaCorriente crearCuentaCorriente(){
-        return new CuentaCorriente18Años();
+    public CuentaCorriente crearCuentaCorriente(String id){
+        return new CuentaCorriente18Años(id);
     }
     
-    public TarjetaCredito crearTarjetaCredito(){
-        return new TarjetaCredito18Años();  
+    public TarjetaCredito crearTarjetaCredito(String id){
+        return new TarjetaCredito18Años(id);  
     }
-    public TarjetaDebito crearTarjetaDebito(){
-        return new TarjetaDebito18Años();
+    public TarjetaDebito crearTarjetaDebito(String id){
+        return new TarjetaDebito18Años(id);
     }
-    public CDT crearCDT(){
-       return new Cdt18Años(); 
+    public CDT crearCDT(String id){
+       return new Cdt18Años(id); 
     }
-    public CreditoRotativo crearRotativo(){
-      return new CreditoRotativo18Años();  
+    
+    public CreditoRotativo crearRotativo(String id){
+      return new CreditoRotativo18Años(id);  
     }
  
     

@@ -13,8 +13,9 @@ import productos.CuentaAhorro;
  */
 public class CuentaAhorro18Años extends CuentaAhorro{
 
-    public CuentaAhorro18Años() {
-        
+    public CuentaAhorro18Años(String id) {
+        this.id = id;
+        this.estado = true;
     }
     
     private CuentaAhorro18Años(CuentaAhorro18Años cuentaA) {

@@ -12,8 +12,9 @@ import productos.CreditoRotativo;
  * @author alejonba0498
  */
 public class CreditoRotativo18Años extends CreditoRotativo {
-    public CreditoRotativo18Años() {
-        
+    public CreditoRotativo18Años(String id) {
+        this.id = id;
+        this.cupo = 0;
     }
     
     private CreditoRotativo18Años(CreditoRotativo18Años tarjetaD) {

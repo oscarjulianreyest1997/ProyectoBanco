@@ -13,8 +13,9 @@ import productos.CuentaAhorro;
  */
 public class CuentaAhorroPensionado extends CuentaAhorro{
     
-    public CuentaAhorroPensionado() {
-        
+    public CuentaAhorroPensionado(String id){
+        this.id = id;
+        this.estado = true;
     }
     
     private CuentaAhorroPensionado(CuentaAhorroPensionado cuentaA) {

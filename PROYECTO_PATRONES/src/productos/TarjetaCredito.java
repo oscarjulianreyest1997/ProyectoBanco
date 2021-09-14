@@ -11,14 +11,14 @@ package productos;
  */
 public abstract class TarjetaCredito {
   
-    public double id;
+    public String id;
     public int cupo;
 
-    public double getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(String id) {
         this.id = id;
     }
 

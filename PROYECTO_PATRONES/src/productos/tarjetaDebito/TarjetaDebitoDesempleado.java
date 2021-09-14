@@ -13,8 +13,10 @@ import productos.TarjetaDebito;
  */
 public class TarjetaDebitoDesempleado extends TarjetaDebito {
     
-    public TarjetaDebitoDesempleado() {
-        
+    public TarjetaDebitoDesempleado(String id){
+        this.id = id;
+        this.tieneLimite = true;
+        this.limiteTransaccion = 50000;
     }
     
     private TarjetaDebitoDesempleado(TarjetaDebitoDesempleado tarjetaD) {

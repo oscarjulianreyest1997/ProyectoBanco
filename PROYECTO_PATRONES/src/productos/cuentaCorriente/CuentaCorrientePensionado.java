@@ -12,8 +12,9 @@ import productos.CuentaCorriente;
  * @author alejonba0498
  */
 public class CuentaCorrientePensionado extends CuentaCorriente{
-       public CuentaCorrientePensionado() {
-        
+       public CuentaCorrientePensionado(String id) {
+        this.id = id;
+        this.estado = true;
     }
     
     private CuentaCorrientePensionado(CuentaCorrientePensionado cuentaC) {

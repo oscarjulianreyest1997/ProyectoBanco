@@ -10,15 +10,24 @@ package productos;
  * @author alejonba0498
  */
 public abstract class TarjetaDebito {
-   public double id;
+   public String id;
+   public boolean tieneLimite;
    public int limiteTransaccion;
 
-    public double getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public boolean isTieneLimite() {
+        return tieneLimite;
+    }
+
+    public void setTieneLimite(boolean tieneLimite) {
+        this.tieneLimite = tieneLimite;
     }
 
     public int getLimiteTransaccion() {

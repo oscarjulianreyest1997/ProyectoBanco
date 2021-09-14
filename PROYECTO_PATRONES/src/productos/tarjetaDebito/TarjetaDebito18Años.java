@@ -12,8 +12,10 @@ import productos.TarjetaDebito;
  * @author alejonba0498
  */
 public class TarjetaDebito18Años extends TarjetaDebito{
-    public TarjetaDebito18Años() {
-        
+    public TarjetaDebito18Años(String id){
+        this.id = id;
+        this.tieneLimite = true;
+        this.limiteTransaccion = 200000;
     }
     
     private TarjetaDebito18Años(TarjetaDebito18Años tarjetaD) {

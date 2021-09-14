@@ -24,27 +24,27 @@ import productos.tarjetaDebito.TarjetaDebitoPensionado;
  */
 public class PerfilPensionado implements IBanco{
     
-    public CuentaAhorro crearCuentaAhorros(){
-        
-         return new CuentaAhorroPensionado();
-     }
-    public CuentaCorriente crearCuentaCorriente(){
-        
-        return new CuentaCorrientePensionado();
+    public CuentaAhorro crearCuentaAhorros(String id){
+         return new CuentaAhorroPensionado(id);
     }
-    public TarjetaCredito crearTarjetaCredito(){
-        return new TarjetaCreditoPensionado();
-        
+    
+    public CuentaCorriente crearCuentaCorriente(String id){
+        return new CuentaCorrientePensionado(id);
     }
-    public TarjetaDebito crearTarjetaDebito(){
-        
-        return new TarjetaDebitoPensionado();
+    
+    public TarjetaCredito crearTarjetaCredito(String id){
+        return new TarjetaCreditoPensionado(id);
     }
-    public CDT crearCDT(){
-       return new CdtPensionado(); 
+    
+    public TarjetaDebito crearTarjetaDebito(String id){
+        return new TarjetaDebitoPensionado(id);
     }
-    public CreditoRotativo crearRotativo(){
-      return new CreditoRotativoPensionado(); 
-      //------------------------------
+    
+    public CDT crearCDT(String id){
+       return new CdtPensionado(id); 
+    }
+    
+    public CreditoRotativo crearRotativo(String id){
+      return new CreditoRotativoPensionado(id); 
     }
 }

@@ -12,8 +12,9 @@ import productos.TarjetaCredito;
  * @author alejonba0498
  */
 public class TarjetaCreditoEmpleado extends TarjetaCredito{
-    public TarjetaCreditoEmpleado() {
-        
+    public TarjetaCreditoEmpleado(String id){
+        this.id = id;
+        this.cupo = 3500000;
     }
     
     private TarjetaCreditoEmpleado(TarjetaCreditoEmpleado tarjetaC) {

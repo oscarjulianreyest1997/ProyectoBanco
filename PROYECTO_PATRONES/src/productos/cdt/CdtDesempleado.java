@@ -13,8 +13,10 @@ import productos.CDT;
  */
 public class CdtDesempleado extends CDT {
 
-    public CdtDesempleado() {
-        
+    public CdtDesempleado(String id) {
+        this.id = id;
+        this.duracion = 3;
+        this.montoMinimo = 1000000;
     }
     
     private CdtDesempleado(CdtDesempleado cdt) {

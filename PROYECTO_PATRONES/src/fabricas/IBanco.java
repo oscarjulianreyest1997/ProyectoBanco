@@ -14,11 +14,11 @@ import productos.*;
  */
 public interface IBanco {
    
-    public CuentaAhorro crearCuentaAhorros();
-    public CuentaCorriente crearCuentaCorriente();
-    public TarjetaCredito crearTarjetaCredito();
-    public TarjetaDebito crearTarjetaDebito();
-    public CDT crearCDT();
-    public CreditoRotativo crearRotativo();
+    public CuentaAhorro crearCuentaAhorros(String id);
+    public CuentaCorriente crearCuentaCorriente(String id);
+    public TarjetaCredito crearTarjetaCredito(String id);
+    public TarjetaDebito crearTarjetaDebito(String id);
+    public CDT crearCDT(String id);
+    public CreditoRotativo crearRotativo(String id);
     
 }

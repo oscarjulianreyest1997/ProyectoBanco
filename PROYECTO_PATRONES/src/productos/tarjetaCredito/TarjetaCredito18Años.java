@@ -12,8 +12,9 @@ import productos.TarjetaCredito;
  * @author alejonba0498
  */
 public class TarjetaCredito18Años extends TarjetaCredito{
-    public TarjetaCredito18Años() {
-        
+    public TarjetaCredito18Años(String id){
+        this.id = id;
+        this.cupo = 1000000;
     }
     
     private TarjetaCredito18Años(TarjetaCredito18Años tarjetaC) {

@@ -13,8 +13,9 @@ import productos.CuentaAhorro;
  * @author alejonba0498
  */
 public class CreditoRotativoPensionado extends CreditoRotativo{
-      public CreditoRotativoPensionado() {
-        
+      public CreditoRotativoPensionado(String id) {
+        this.id = id;
+        this.cupo = 5000000;
     }
     
     private CreditoRotativoPensionado(CreditoRotativoPensionado tarjetaD) {

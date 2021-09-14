@@ -13,9 +13,9 @@ import productos.TarjetaCredito;
  */
 public class TarjetaCreditoPensionado extends TarjetaCredito{
     
-    
-       public TarjetaCreditoPensionado() {
-        
+    public TarjetaCreditoPensionado(String id){
+        this.id = id;
+        this.cupo = 10000000;
     }
     
     private TarjetaCreditoPensionado(TarjetaCreditoPensionado tarjetaC) {
