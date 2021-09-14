@@ -12,8 +12,9 @@ import productos.TarjetaDebito;
  * @author alejonba0498
  */
 public class TarjetaDebitoEmpleado extends TarjetaDebito{
-    public TarjetaDebitoEmpleado() {
-        
+    public TarjetaDebitoEmpleado(String id){
+        this.id = id;
+        this.tieneLimite = false;
     }
     
     private TarjetaDebitoEmpleado(TarjetaDebitoEmpleado tarjetaD) {

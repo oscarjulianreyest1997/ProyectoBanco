@@ -24,29 +24,28 @@ import productos.tarjetaDebito.TarjetaDebitoEmpleado;
  */
 public class PerfilEmpleado implements IBanco {
    
-    public CuentaAhorro crearCuentaAhorros(){
-         return new CuentaAhorroEmpleado();
+    public CuentaAhorro crearCuentaAhorros(String id){
+         return new CuentaAhorroEmpleado(id);
      }
     
-    public CuentaCorriente crearCuentaCorriente(){
-        return new CuentaCorrienteEmpleado();
+    public CuentaCorriente crearCuentaCorriente(String id){
+        return new CuentaCorrienteEmpleado(id);
     }
     
-    public TarjetaCredito crearTarjetaCredito(){
-        return new TarjetaCreditoEmpleado();
-        
-    }
-    public TarjetaDebito crearTarjetaDebito(){
-        
-        return new TarjetaDebitoEmpleado();
+    public TarjetaCredito crearTarjetaCredito(String id){
+        return new TarjetaCreditoEmpleado(id);
     }
     
-    public CDT crearCDT(){
-       return new CdtEmpleado(); 
+    public TarjetaDebito crearTarjetaDebito(String id){
+        return new TarjetaDebitoEmpleado(id);
     }
     
-    public CreditoRotativo crearRotativo(){
-      return new CreditoRotativoEmpleado();  
+    public CDT crearCDT(String id){
+       return new CdtEmpleado(id); 
+    }
+    
+    public CreditoRotativo crearRotativo(String id){
+      return new CreditoRotativoEmpleado(id);  
     }
     
     

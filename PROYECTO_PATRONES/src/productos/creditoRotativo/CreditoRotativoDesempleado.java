@@ -12,8 +12,9 @@ import productos.CreditoRotativo;
  * @author alejonba0498
  */
 public class CreditoRotativoDesempleado extends CreditoRotativo {
-     public CreditoRotativoDesempleado() {
-        
+    public CreditoRotativoDesempleado(String id) {
+       this.id = id;
+       this.cupo = 500000;
     }
     
     private CreditoRotativoDesempleado(CreditoRotativoDesempleado rota) {

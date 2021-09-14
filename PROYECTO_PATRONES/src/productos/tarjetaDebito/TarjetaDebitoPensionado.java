@@ -12,8 +12,9 @@ import productos.TarjetaDebito;
  * @author alejonba0498
  */
 public class TarjetaDebitoPensionado extends TarjetaDebito{
-     public TarjetaDebitoPensionado() {
-        
+     public TarjetaDebitoPensionado(String id) {
+        this.id = id;
+        this.tieneLimite = false;
     }
     
     private TarjetaDebitoPensionado(TarjetaDebitoPensionado tarjetaD) {

@@ -13,8 +13,9 @@ import productos.TarjetaCredito;
  */
 public class TarjetaCreditoDesempleado extends TarjetaCredito {
     
-     public TarjetaCreditoDesempleado() {
-        
+     public TarjetaCreditoDesempleado(String id){
+        this.id = id;
+        this.cupo = 0;
     }
     
     private TarjetaCreditoDesempleado(TarjetaCreditoDesempleado tarjetaC) {

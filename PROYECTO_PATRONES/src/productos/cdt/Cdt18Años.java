@@ -13,8 +13,10 @@ import productos.CDT;
  */
 public class Cdt18Años extends CDT{
 
-    public Cdt18Años() {
-        
+    public Cdt18Años(String id) {
+        this.id = id;
+        this.duracion = 5;
+        this.montoMinimo = 1000000;
     }
     
     private Cdt18Años(Cdt18Años cdt) {

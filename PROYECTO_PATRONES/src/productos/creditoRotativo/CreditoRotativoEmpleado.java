@@ -13,8 +13,9 @@ import productos.CreditoRotativo;
  */
 public class CreditoRotativoEmpleado extends CreditoRotativo {
     
-    public CreditoRotativoEmpleado() {
-        
+    public CreditoRotativoEmpleado(String id) {
+        this.id = id;
+        this.cupo = 2000000;
     }
     
     private CreditoRotativoEmpleado(CreditoRotativoEmpleado tarjetaD) {

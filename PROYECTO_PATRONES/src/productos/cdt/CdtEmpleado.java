@@ -13,9 +13,10 @@ import productos.CDT;
  */
 public class CdtEmpleado extends CDT{
     
-    
-    public CdtEmpleado() {
-        
+    public CdtEmpleado(String id) {
+        this.id = id;
+        this.duracion = 5;
+        this.montoMinimo = 1000000;
     }
     
     private CdtEmpleado(CdtEmpleado cdte) {

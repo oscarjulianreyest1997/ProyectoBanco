@@ -13,8 +13,9 @@ import productos.CuentaCorriente;
  */
 public class CuentaCorrienteDesempleado extends CuentaCorriente{
     
-     public CuentaCorrienteDesempleado() {
-        
+     public CuentaCorrienteDesempleado(String id) {
+        this.id = id;
+        this.estado = true;
     }
     
     private CuentaCorrienteDesempleado(CuentaCorrienteDesempleado cuentaC) {

@@ -12,15 +12,15 @@ package productos;
 public  abstract class  CDT {
     
     
-    public double id;
+    public String id;
     public int montoMinimo;
     public float duracion;
 
-    public double getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(String id) {
         this.id = id;
     }
 

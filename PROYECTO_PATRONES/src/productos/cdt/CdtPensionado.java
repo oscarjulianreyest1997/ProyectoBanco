@@ -12,8 +12,10 @@ import productos.CDT;
  * @author alejonba0498
  */
 public class CdtPensionado extends CDT{
-     public CdtPensionado() {
-        
+     public CdtPensionado(String id) {
+        this.id = id;
+        this.duracion = 5;
+        this.montoMinimo = 1000000;
     }
     
     private CdtPensionado(CdtPensionado cdt) {

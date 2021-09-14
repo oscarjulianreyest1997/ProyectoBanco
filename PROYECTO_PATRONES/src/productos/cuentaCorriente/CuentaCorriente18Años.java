@@ -12,8 +12,9 @@ import productos.CuentaCorriente;
  * @author alejonba0498
  */
 public class CuentaCorriente18Años extends CuentaCorriente{
-    public CuentaCorriente18Años() {
-        
+    public CuentaCorriente18Años(String id) {
+        this.id = id;
+        this.estado = false;
     }
     
     private CuentaCorriente18Años(CuentaCorriente18Años cuentaC) {
