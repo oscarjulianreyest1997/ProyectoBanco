@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/productos/CDT.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/productos/cdt/Cdt18Años.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/Perfil18Años.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/PerfilDesempleado.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/IBanco.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaDebito/TarjetaDebito18Años.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaCredito/TarjetaCreditoPensionado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaDebito/TarjetaDebitoEmpleado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaDebito/TarjetaDebitoDesempleado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaCredito/TarjetaCreditoDesempleado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaCredito/TarjetaCreditoEmpleado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaDebito/TarjetaDebitoPensionado.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/tarjetaCredito/TarjetaCredito18Años.java</file>
         </group>
     </open-files>
 </project-private>
