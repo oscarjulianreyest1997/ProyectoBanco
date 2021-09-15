@@ -1,22 +1,22 @@
-
 package Modelo;
 
 import java.util.ArrayList;
+import productos.ProductoBancario;
 
 /**
  *
  * @author alejonba0498
  */
 public class Cliente {
- 
-public  String tipo;
-ArrayList listaProductos=new ArrayList();
 
-    public ArrayList getListaProductos() {
+    public String tipo;
+    private ArrayList<ProductoBancario> listaProductos = new ArrayList<ProductoBancario>();
+
+    public ArrayList<ProductoBancario> getListaProductos() {
         return listaProductos;
     }
 
-    public void setListaProductos(ArrayList listaProductos) {
+    public void setListaProductos(ArrayList<ProductoBancario> listaProductos) {
         this.listaProductos = listaProductos;
     }
 
@@ -28,13 +28,11 @@ ArrayList listaProductos=new ArrayList();
         this.tipo = tipo;
     }
 
-    public void mostrarPortafolio(){
-        
+    public void mostrarPortafolio() {
+        System.out.println("Tipo de cliente : "+this.tipo);
         for (Object producto : listaProductos) {
             System.out.println(producto.toString());
         }
     }
-    
-    
-    
+
 }

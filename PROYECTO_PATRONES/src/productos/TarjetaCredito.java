@@ -9,18 +9,9 @@ package productos;
  *
  * @author alejonba0498
  */
-public class TarjetaCredito {
-  
-    public String id;
+public class TarjetaCredito extends ProductoBancario{
+
     public int cupo;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public int getCupo() {
         return cupo;
@@ -29,27 +20,25 @@ public class TarjetaCredito {
     public void setCupo(int cupo) {
         this.cupo = cupo;
     }
-    
-    public TarjetaCredito(String id, int cupo){
-        this.id = id;
+
+    public TarjetaCredito(String id, int cupo) {
+        super(id);
         this.cupo = cupo;
     }
-    private TarjetaCredito(TarjetaCredito tarjetaC){
-        this.id = tarjetaC.id;
+
+    private TarjetaCredito(TarjetaCredito tarjetaC) {
+        super(tarjetaC);
         this.cupo = tarjetaC.cupo;
     }
-    
-    
-    public TarjetaCredito clone(){
+
+    @Override
+    public TarjetaCredito clone() {
         return new TarjetaCredito(this);
     }
 
     @Override
     public String toString() {
-        return "TarjetaCredito" + "id=" + id + ", cupo=" + cupo;
+        return "TarjetaCredito " + " id = " + this.getId() + " , cupo = " + cupo;
     }
-    
-    
-    
-   
+
 }

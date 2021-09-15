@@ -9,19 +9,10 @@ package productos;
  *
  * @author alejonba0498
  */
-public class CDT {
-    
-    public String id;
+public class CDT extends ProductoBancario{
+
     public int montoMinimo;
     public float duracion;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public int getMontoMinimo() {
         return montoMinimo;
@@ -39,27 +30,26 @@ public class CDT {
         this.duracion = duracion;
     }
 
-    
-    
-    public CDT(String id, int montoMinimo, float duracion){
-        this.id = id;
+    public CDT(String id, int montoMinimo, float duracion) {
+        super(id);
         this.montoMinimo = montoMinimo;
         this.duracion = duracion;
     }
-    
-    private CDT(CDT cdt){
-        this.duracion=cdt.duracion;
-        this.id=cdt.id;
-        this.montoMinimo=cdt.montoMinimo;
+
+    private CDT(CDT cdt) {
+        super(cdt);
+        this.duracion = cdt.duracion;
+        this.montoMinimo = cdt.montoMinimo;
     }
-    
-    public CDT clone(){
+
+    @Override
+    public CDT clone() {
         return new CDT(this);
     }
-    
+
     @Override
     public String toString() {
-        return "CDT" + "id=" + id + ", montoMinimo=" + montoMinimo + ", duracion=" + duracion;
+        return "CDT " + " id = " + this.getId() + " , montoMinimo = " + montoMinimo + " , duracion = " + duracion;
     }
-    
+
 }
