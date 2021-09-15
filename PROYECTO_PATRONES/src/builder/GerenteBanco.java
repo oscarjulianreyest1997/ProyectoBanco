@@ -10,6 +10,7 @@ import productos.CDT;
 import productos.CreditoRotativo;
 import productos.CuentaAhorro;
 import productos.CuentaCorriente;
+import productos.ProductoBancario;
 import productos.TarjetaCredito;
 import productos.TarjetaDebito;
 
@@ -39,19 +40,19 @@ public class GerenteBanco {
 
             Perfil18Años perfil18 = new Perfil18Años();
 
-            CDT cdt18 = perfil18.crearCDT(idCdt);
-            CreditoRotativo creditoRotativo18 = perfil18.crearRotativo(idCreditoRotativo);
-            CuentaAhorro cuentaAhorro18 = perfil18.crearCuentaAhorros(idCuentaAhorro);
-            CuentaCorriente cuentaCorriente18 = perfil18.crearCuentaCorriente(idCuentaCorriente);
-            TarjetaCredito tarjetaCredito18 = perfil18.crearTarjetaCredito(idTarjetaCredito);
-            TarjetaDebito tarjetaDebito18 = perfil18.crearTarjetaDebito(idTarjetaDebito);
+            CDT cdt = perfil18.crearCDT(idCdt);
+            CreditoRotativo creditoRotativo = perfil18.crearRotativo(idCreditoRotativo);
+            CuentaAhorro cuentaAhorro = perfil18.crearCuentaAhorros(idCuentaAhorro);
+            CuentaCorriente cuentaCorriente = perfil18.crearCuentaCorriente(idCuentaCorriente);
+            TarjetaCredito tarjetaCredito = perfil18.crearTarjetaCredito(idTarjetaCredito);
+            TarjetaDebito tarjetaDebito = perfil18.crearTarjetaDebito(idTarjetaDebito);
 
-            c.getListaProductos().add(cdt18);
-            c.getListaProductos().add(creditoRotativo18);
-            c.getListaProductos().add(cuentaAhorro18);
-            c.getListaProductos().add(cuentaCorriente18);
-            c.getListaProductos().add(tarjetaCredito18);
-            c.getListaProductos().add(tarjetaDebito18);
+            c.getListaProductos().add(cdt);
+            c.getListaProductos().add(creditoRotativo);
+            c.getListaProductos().add(cuentaAhorro);
+            c.getListaProductos().add(cuentaCorriente);
+            c.getListaProductos().add(tarjetaCredito);
+            c.getListaProductos().add(tarjetaDebito);
 
         } else if (c.tipo == "Desempleado") {
 
@@ -109,6 +110,15 @@ public class GerenteBanco {
         }
 
     }
+    
+    public ProductoBancario clonarProducto(Cliente c, String id){
+        for (ProductoBancario product : c.getListaProductos()) {
+            if(id.equals(product.getId())){
+                return product.clone();
+            }
+        }
+        return null;
+    }
 
     public static GerenteBanco getGerente() {
         if (gerente == null) {
@@ -116,5 +126,7 @@ public class GerenteBanco {
         }
         return gerente;
     }
+    
+    
 
 }

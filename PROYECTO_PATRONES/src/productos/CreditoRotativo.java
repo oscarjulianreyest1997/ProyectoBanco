@@ -4,18 +4,9 @@ package productos;
  *
  * @author alejonba0498
  */
-public class CreditoRotativo {
+public class CreditoRotativo extends ProductoBancario{
 
-    public String id;
     public int cupo;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public int getCupo() {
         return cupo;
@@ -26,22 +17,23 @@ public class CreditoRotativo {
     }
 
     public CreditoRotativo(String id, int cupo) {
-        this.id = id;
+        super(id);
         this.cupo = cupo;
     }
 
     private CreditoRotativo(CreditoRotativo creditoR) {
+        super(creditoR);
         this.cupo = creditoR.cupo;
-        this.id = creditoR.id;
     }
 
+    @Override
     public CreditoRotativo clone() {
         return new CreditoRotativo(this);
     }
 
     @Override
     public String toString() {
-        return "CreditoRotativo" + "id=" + id + ", cupo=" + cupo;
+        return "CreditoRotativo " + " id = " + this.getId() + " , cupo = " + cupo;
     }
 
 }

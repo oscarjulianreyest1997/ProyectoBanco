@@ -8,6 +8,7 @@ package launcher;
 import Modelo.Cliente;
 import builder.GerenteBanco;
 import productos.CDT;
+import productos.ProductoBancario;
 
 /**
  *
@@ -42,35 +43,33 @@ public class Main {
         gerente.crearPortafolio(cliente2);
         gerente.crearPortafolio(cliente3);
         gerente.crearPortafolio(cliente4);
-        System.out.println(cliente.getTipo());
+        
         cliente.mostrarPortafolio();
         System.out.println("");
-        System.out.println(cliente2.getTipo());
+
         cliente2.mostrarPortafolio();
         System.out.println("");
-        System.out.println(cliente3.getTipo());
+
         cliente3.mostrarPortafolio();
         System.out.println("");
-        System.out.println(cliente4.getTipo());
         cliente4.mostrarPortafolio();
+        System.out.println("");
 
         //   System.out.println(cdt.getClass().getSimpleName());
         //Se busca en la lista del cliente de tipo CDT y se clona al patrón prototype
-        CDT cdt, cloneCdt;
-        System.out.println("");
-        for (Object producto : cliente.getListaProductos()) {
-
+        String idProduct = "";
+        
+        for (ProductoBancario producto : cliente.getListaProductos()) {
             if (producto.getClass().getSimpleName().equals("CDT")) {
-                cdt = (CDT) producto;
-
-                cloneCdt = cdt.clone();
-                cloneCdt.setMontoMinimo(15000000);
-                cloneCdt.setDuracion(10);
-                cliente.getListaProductos().add(cloneCdt);
+                idProduct = ((CDT)producto).getId();
                 break;
             }
         }
-        System.out.println("");
+        CDT cloneCDT = (CDT) gerente.clonarProducto(cliente, idProduct);
+        cloneCDT.setMontoMinimo(15000000);
+        cloneCDT.setDuracion(10);
+        cliente.getListaProductos().add(cloneCDT);
+        System.out.println("Cliente con producto clonado");
         cliente.mostrarPortafolio();
 
     }

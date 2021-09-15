@@ -4,18 +4,9 @@ package productos;
  *
  * @author alejonba0498
  */
-public class CuentaAhorro {
+public class CuentaAhorro extends ProductoBancario{
 
-    public String id;
     public boolean estado;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public boolean isEstado() {
         return estado;
@@ -26,22 +17,23 @@ public class CuentaAhorro {
     }
 
     public CuentaAhorro(String id, boolean estado) {
-        this.id = id;
+        super(id);
         this.estado = estado;
     }
 
     private CuentaAhorro(CuentaAhorro cuentaA) {
-        this.id = cuentaA.id;
+        super(cuentaA);
         this.estado = cuentaA.estado;
     }
 
+    @Override
     public CuentaAhorro clone() {
         return new CuentaAhorro(this);
     }
 
     @Override
     public String toString() {
-        return "CuentaAhorro" + "id=" + id + ", estado=" + estado;
+        return "CuentaAhorro " + " id = " + this.getId() + " , estado = " + estado;
     }
 
 }
