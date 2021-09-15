@@ -10,7 +10,7 @@ package productos;
  * @author alejonba0498
  */
 public class TarjetaCredito {
-  
+
     public String id;
     public int cupo;
 
@@ -29,18 +29,18 @@ public class TarjetaCredito {
     public void setCupo(int cupo) {
         this.cupo = cupo;
     }
-    
-    public TarjetaCredito(String id, int cupo){
+
+    public TarjetaCredito(String id, int cupo) {
         this.id = id;
         this.cupo = cupo;
     }
-    private TarjetaCredito(TarjetaCredito tarjetaC){
+
+    private TarjetaCredito(TarjetaCredito tarjetaC) {
         this.id = tarjetaC.id;
         this.cupo = tarjetaC.cupo;
     }
-    
-    
-    public TarjetaCredito clone(){
+
+    public TarjetaCredito clone() {
         return new TarjetaCredito(this);
     }
 
@@ -48,8 +48,5 @@ public class TarjetaCredito {
     public String toString() {
         return "TarjetaCredito" + "id=" + id + ", cupo=" + cupo;
     }
-    
-    
-    
-   
+
 }

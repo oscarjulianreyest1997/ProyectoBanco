@@ -24,7 +24,6 @@ public class GerenteBanco {
     private GerenteBanco() {
 
     }
-    
 
     public void crearPortafolio(Cliente c) {
         NumberGenerator algoritmo = new NumberGenerator();
@@ -53,7 +52,6 @@ public class GerenteBanco {
             c.getListaProductos().add(cuentaCorriente18);
             c.getListaProductos().add(tarjetaCredito18);
             c.getListaProductos().add(tarjetaDebito18);
-            
 
         } else if (c.tipo == "Desempleado") {
 

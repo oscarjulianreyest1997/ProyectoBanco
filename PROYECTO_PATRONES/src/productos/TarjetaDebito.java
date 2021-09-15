@@ -10,9 +10,10 @@ package productos;
  * @author alejonba0498
  */
 public class TarjetaDebito {
-   public String id;
-   public boolean tieneLimite;
-   public int limiteTransaccion;
+
+    public String id;
+    public boolean tieneLimite;
+    public int limiteTransaccion;
 
     public String getId() {
         return id;
@@ -37,29 +38,25 @@ public class TarjetaDebito {
     public void setLimiteTransaccion(int limiteTransaccion) {
         this.limiteTransaccion = limiteTransaccion;
     }
-   
-   
-   public  TarjetaDebito(String id, boolean tieneLimite, int limiteTransaccion){
+
+    public TarjetaDebito(String id, boolean tieneLimite, int limiteTransaccion) {
         this.id = id;
         this.tieneLimite = tieneLimite;
         this.limiteTransaccion = limiteTransaccion;
-   }
-   
-   private TarjetaDebito(TarjetaDebito tarjetaD){
-       this.id = tarjetaD.id;
-       this.limiteTransaccion = tarjetaD.limiteTransaccion;
     }
-    
-    
-    public TarjetaDebito clone(){
+
+    private TarjetaDebito(TarjetaDebito tarjetaD) {
+        this.id = tarjetaD.id;
+        this.limiteTransaccion = tarjetaD.limiteTransaccion;
+    }
+
+    public TarjetaDebito clone() {
         return new TarjetaDebito(this);
-    }  
+    }
 
     @Override
     public String toString() {
         return "TarjetaDebito" + "id=" + id + ", tieneLimite=" + tieneLimite + ", limiteTransaccion=" + limiteTransaccion;
     }
-    
-    
-    
+
 }

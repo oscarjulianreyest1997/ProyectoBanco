@@ -1,4 +1,3 @@
-
 package productos;
 
 /**
@@ -6,9 +5,9 @@ package productos;
  * @author alejonba0498
  */
 public class CuentaCorriente {
-    
-   public String id;
-   public boolean estado;
+
+    public String id;
+    public boolean estado;
 
     public String getId() {
         return id;
@@ -25,19 +24,18 @@ public class CuentaCorriente {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-   
-    
-    public CuentaCorriente(String id, boolean estado){
+
+    public CuentaCorriente(String id, boolean estado) {
         this.id = id;
         this.estado = estado;
     }
-    private CuentaCorriente(CuentaCorriente cuentaC){
+
+    private CuentaCorriente(CuentaCorriente cuentaC) {
         this.id = cuentaC.id;
         this.estado = cuentaC.estado;
     }
-    
-    
-    public CuentaCorriente clone(){
+
+    public CuentaCorriente clone() {
         return new CuentaCorriente(this);
     }
 
@@ -45,7 +43,5 @@ public class CuentaCorriente {
     public String toString() {
         return "CuentaCorriente" + "id=" + id + ", estado=" + estado;
     }
-    
-    
-    
+
 }

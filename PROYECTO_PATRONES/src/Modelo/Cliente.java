@@ -1,4 +1,3 @@
-
 package Modelo;
 
 import java.util.ArrayList;
@@ -8,9 +7,9 @@ import java.util.ArrayList;
  * @author alejonba0498
  */
 public class Cliente {
- 
-public  String tipo;
-ArrayList listaProductos=new ArrayList();
+
+    public String tipo;
+    private ArrayList listaProductos = new ArrayList();
 
     public ArrayList getListaProductos() {
         return listaProductos;
@@ -28,13 +27,10 @@ ArrayList listaProductos=new ArrayList();
         this.tipo = tipo;
     }
 
-    public void mostrarPortafolio(){
-        
+    public void mostrarPortafolio() {
         for (Object producto : listaProductos) {
             System.out.println(producto.toString());
         }
     }
-    
-    
-    
+
 }

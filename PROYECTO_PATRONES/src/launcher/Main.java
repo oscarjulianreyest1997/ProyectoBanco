@@ -59,7 +59,7 @@ public class Main {
         CDT cdt, cloneCdt;
         System.out.println("");
         for (Object producto : cliente.getListaProductos()) {
-          
+
             if (producto.getClass().getSimpleName().equals("CDT")) {
                 cdt = (CDT) producto;
 
