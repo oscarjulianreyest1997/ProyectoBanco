@@ -9,7 +9,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public abstract class TarjetaDebito {
+public class TarjetaDebito {
    public String id;
    public boolean tieneLimite;
    public int limiteTransaccion;
@@ -39,16 +39,20 @@ public abstract class TarjetaDebito {
     }
    
    
-   public  TarjetaDebito(){
-       
+   public  TarjetaDebito(String id, boolean tieneLimite, int limiteTransaccion){
+        this.id = id;
+        this.tieneLimite = tieneLimite;
+        this.limiteTransaccion = limiteTransaccion;
    }
    
-   protected TarjetaDebito(TarjetaDebito tarjetaD){
+   private TarjetaDebito(TarjetaDebito tarjetaD){
        this.id = tarjetaD.id;
        this.limiteTransaccion = tarjetaD.limiteTransaccion;
     }
     
     
-    public abstract TarjetaDebito clone();    
+    public TarjetaDebito clone(){
+        return new TarjetaDebito(this);
+    }    
     
 }

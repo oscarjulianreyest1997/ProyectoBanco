@@ -5,7 +5,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public abstract class CreditoRotativo {
+public class CreditoRotativo {
     
     public String id;
     public int cupo;
@@ -26,16 +26,19 @@ public abstract class CreditoRotativo {
         this.cupo = cupo;
     }
     
-    public CreditoRotativo(){
-        
-    }
-    protected CreditoRotativo(CreditoRotativo rota){
-        this.id = rota.id;
-        this.cupo = rota.cupo;
+    public CreditoRotativo(String id, int cupo){
+        this.id = id;
+        this.cupo = cupo;
     }
     
+    private CreditoRotativo(CreditoRotativo creditoR){
+        this.cupo = creditoR.cupo;
+        this.id = creditoR.id;
+    }
     
-    public abstract CreditoRotativo clone();
+    public CreditoRotativo clone(){
+        return new CreditoRotativo(this);
+    }
     
     
 }

@@ -4,7 +4,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public abstract class CuentaAhorro {
+public class CuentaAhorro {
 
     public String id;
     public boolean estado;
@@ -26,17 +26,20 @@ public abstract class CuentaAhorro {
     }
 
     
-    public CuentaAhorro(){
-        
+    public CuentaAhorro(String id, boolean estado){
+        this.id = id;
+        this.estado = estado;
     }
     
-    protected CuentaAhorro(CuentaAhorro cuentaA){
+    private CuentaAhorro(CuentaAhorro cuentaA){
        this.id = cuentaA.id;
-        this.estado = cuentaA.estado;
+       this.estado = cuentaA.estado;
     }
     
     
-    public abstract CuentaAhorro clone();
+    public CuentaAhorro clone(){
+        return new CuentaAhorro(this);
+    }
     
     
 }

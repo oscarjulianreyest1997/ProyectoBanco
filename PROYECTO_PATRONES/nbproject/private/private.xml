@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/productos/CDT.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/productos/cdt/Cdt18Años.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/Perfil18Años.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/PerfilDesempleado.java</file>
-            <file>file:/C:/Users/diego/Desktop/PROYECTO_PATRONES/src/fabricas/IBanco.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/cuentaCorriente/CuentaCorriente18Años.java</file>
+            <file>file:/C:/Users/diego/Documents/GitHub/ProyectoBanco/PROYECTO_PATRONES/src/productos/CuentaCorriente.java</file>
         </group>
     </open-files>
 </project-private>
