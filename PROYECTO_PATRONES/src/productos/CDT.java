@@ -9,8 +9,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public  abstract class  CDT {
-    
+public class CDT {
     
     public String id;
     public int montoMinimo;
@@ -42,16 +41,20 @@ public  abstract class  CDT {
     
     
     
-    public CDT(){
-        
+    public CDT(String id, int montoMinimo, float duracion){
+        this.id = id;
+        this.montoMinimo = montoMinimo;
+        this.duracion = duracion;
     }
     
-    protected CDT(CDT cdt){
+    private CDT(CDT cdt){
         this.duracion=cdt.duracion;
         this.id=cdt.id;
         this.montoMinimo=cdt.montoMinimo;
     }
     
-    public abstract CDT clone();
+    public CDT clone(){
+        return new CDT(this);
+    }
     
 }

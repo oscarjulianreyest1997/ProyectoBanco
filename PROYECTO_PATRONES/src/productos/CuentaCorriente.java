@@ -5,7 +5,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public abstract class CuentaCorriente {
+public class CuentaCorriente {
     
    public String id;
    public boolean estado;
@@ -27,16 +27,19 @@ public abstract class CuentaCorriente {
     }
    
     
-    public CuentaCorriente(){
-        
+    public CuentaCorriente(String id, boolean estado){
+        this.id = id;
+        this.estado = estado;
     }
-    protected CuentaCorriente(CuentaCorriente cuentaC){
+    private CuentaCorriente(CuentaCorriente cuentaC){
         this.id = cuentaC.id;
         this.estado = cuentaC.estado;
     }
     
     
-    public abstract CuentaCorriente clone();
+    public CuentaCorriente clone(){
+        return new CuentaCorriente(this);
+    }
     
     
 }
