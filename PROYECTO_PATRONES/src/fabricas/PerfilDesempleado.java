@@ -11,12 +11,6 @@ import productos.CuentaAhorro;
 import productos.CuentaCorriente;
 import productos.TarjetaCredito;
 import productos.TarjetaDebito;
-import productos.cdt.CdtDesempleado;
-import productos.creditoRotativo.CreditoRotativoDesempleado;
-import productos.cuentaAhorros.CuentaAhorroDesempleado;
-import productos.cuentaCorriente.CuentaCorrienteDesempleado;
-import productos.tarjetaCredito.TarjetaCreditoDesempleado;
-import productos.tarjetaDebito.TarjetaDebitoDesempleado;
 
 /**
  *
@@ -25,25 +19,27 @@ import productos.tarjetaDebito.TarjetaDebitoDesempleado;
 public class PerfilDesempleado implements IBanco {
     
     public CuentaAhorro crearCuentaAhorros(String id){
-         return new CuentaAhorroDesempleado(id);
+         return new CuentaAhorro(id, true);
      }
     
     public CuentaCorriente crearCuentaCorriente(String id){
-        return new CuentaCorrienteDesempleado(id);
+        return new CuentaCorriente(id, true);
     }
+    
     public TarjetaCredito crearTarjetaCredito(String id){
-        return new TarjetaCreditoDesempleado(id);
+        return new TarjetaCredito(id, 0);
     }
     
     public TarjetaDebito crearTarjetaDebito(String id){
-        return new TarjetaDebitoDesempleado(id);
+        return new TarjetaDebito(id, true, 50000);
     }
     
     public CDT crearCDT(String id){
-       return new CdtDesempleado(id); 
+       return new CDT(id, 1000000, 3); 
     }
+    
     public CreditoRotativo crearRotativo(String id){
-      return new CreditoRotativoDesempleado(id);  
+      return new CreditoRotativo(id, 500000);  
     }
     
     

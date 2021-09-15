@@ -9,7 +9,7 @@ package productos;
  *
  * @author alejonba0498
  */
-public abstract class TarjetaCredito {
+public class TarjetaCredito {
   
     public String id;
     public int cupo;
@@ -30,16 +30,19 @@ public abstract class TarjetaCredito {
         this.cupo = cupo;
     }
     
-    public TarjetaCredito(){
-        
+    public TarjetaCredito(String id, int cupo){
+        this.id = id;
+        this.cupo = cupo;
     }
-    protected TarjetaCredito(TarjetaCredito tarjetaC){
+    private TarjetaCredito(TarjetaCredito tarjetaC){
         this.id = tarjetaC.id;
         this.cupo = tarjetaC.cupo;
     }
     
     
-    public abstract TarjetaCredito clone();
+    public TarjetaCredito clone(){
+        return new TarjetaCredito(this);
+    }
     
     
     
