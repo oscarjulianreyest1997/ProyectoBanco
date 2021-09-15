@@ -42,4 +42,9 @@ public class CuentaAhorro {
     }
     
     
+    @Override
+    public String toString() {
+        return "CuentaAhorro" + "id=" + id + ", estado=" + estado;
+    }
+
 }

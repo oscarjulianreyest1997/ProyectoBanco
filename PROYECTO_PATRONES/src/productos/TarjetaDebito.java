@@ -53,6 +53,13 @@ public class TarjetaDebito {
     
     public TarjetaDebito clone(){
         return new TarjetaDebito(this);
-    }    
+    }  
+
+    @Override
+    public String toString() {
+        return "TarjetaDebito" + "id=" + id + ", tieneLimite=" + tieneLimite + ", limiteTransaccion=" + limiteTransaccion;
+    }
+    
+    
     
 }

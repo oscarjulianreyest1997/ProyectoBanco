@@ -38,7 +38,7 @@ public class CDT {
     public void setDuracion(float duracion) {
         this.duracion = duracion;
     }
-    
+
     
     
     public CDT(String id, int montoMinimo, float duracion){
@@ -55,6 +55,11 @@ public class CDT {
     
     public CDT clone(){
         return new CDT(this);
+    }
+    
+    @Override
+    public String toString() {
+        return "CDT" + "id=" + id + ", montoMinimo=" + montoMinimo + ", duracion=" + duracion;
     }
     
 }

@@ -43,6 +43,11 @@ public class TarjetaCredito {
     public TarjetaCredito clone(){
         return new TarjetaCredito(this);
     }
+
+    @Override
+    public String toString() {
+        return "TarjetaCredito" + "id=" + id + ", cupo=" + cupo;
+    }
     
     
     

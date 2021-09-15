@@ -40,6 +40,12 @@ public class CuentaCorriente {
     public CuentaCorriente clone(){
         return new CuentaCorriente(this);
     }
+
+    @Override
+    public String toString() {
+        return "CuentaCorriente" + "id=" + id + ", estado=" + estado;
+    }
+    
     
     
 }

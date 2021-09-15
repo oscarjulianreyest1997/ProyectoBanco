@@ -10,6 +10,7 @@ public class CreditoRotativo {
     public String id;
     public int cupo;
 
+  
     public String getId() {
         return id;
     }
@@ -39,6 +40,11 @@ public class CreditoRotativo {
     public CreditoRotativo clone(){
         return new CreditoRotativo(this);
     }
+      @Override
+    public String toString() {
+        return "CreditoRotativo" + "id=" + id + ", cupo=" + cupo;
+    }
+
     
     
 }
